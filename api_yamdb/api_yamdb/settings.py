@@ -8,7 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY', default='secret_key')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG', default='False')
+DEBUG = os.getenv('DEBUG', default=False)
 
 ALLOWED_HOSTS = ['*']
 
@@ -103,7 +103,7 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = os.getenv('USE_TZ', default='True')
+USE_TZ = os.getenv('USE_TZ', default=True)
 
 
 # Устанавливаем кастомную модель User
